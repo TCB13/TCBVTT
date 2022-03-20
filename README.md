@@ -1,6 +1,6 @@
 # TCB13's Virtual Terminal Tools
 
-Small tools to interact in Virtual Terminals (eg. /dev/ttyXY or /dev/ptyXY) in an easy way.
+Small tools to interact in Virtual Terminals (eg. `/dev/ttyXY` or `/dev/ptyXY`) in an easy way.
 
 **Why?** If a program uses a TTY device for command input and output it's hard to send commands to it. Sending output directly to a TTY with, for instance, `echo "text" > /dev/ttyXY` does not magically make it input of that TTY. You may use `conspy` however that's an interactive program not suitable for bash scripts. The following tools aim to solve those problems.
 
@@ -12,7 +12,7 @@ gcc writevt.c -o writevt
 ./writevt /dev/ttyXY text
 ````
 
-**2. tiocsti.c**: another ioctl-based tool capable of using pipped data from stdin.
+**2. tiocsti**: another ioctl-based tool capable of using pipped data from stdin.
 
 Compilation/Usage:
 ````
